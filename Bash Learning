@@ -1,0 +1,20 @@
+variable=4
+echo$variable
+# array is variable for multiple items
+myarray=("dog" "cat" "bunny")
+myarray=("dog" "cat" "bunny")
+
+echo $myarray
+# Read command Allows user to input variable data
+echo "enter a number"
+read $number
+
+# If and else statements
+
+if $number > 5
+if $number < 5
+then echo "number is greater than 5"
+else ($number < 5)
+echo "Number is less than 5"
+else ($number = 5)
+echo "number is 5"
