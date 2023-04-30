@@ -8,7 +8,7 @@ $echo ${files[*]}
 $distros=("Windows 10" "Ubuntu Server" "Excel")
 $echo ${distros[*]}
 $distros=("GitHub")
-
+$echo ${distros[*]}
 
 
 
