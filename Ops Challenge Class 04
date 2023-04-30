@@ -1,10 +1,14 @@
 #!/bin/bash
-
 $array_name=(value1 value2 value3 value4)
-
 $files=("dir1.txt" "dir2.txt" "dir3.txt" dir4.txt")
-
 $echo ${files[*]}
+
+~/scripts$ cat distros.sh
+!#/bin/bash
+$distros=("Windows 10" "Ubuntu Server" "Excel")
+$echo ${distros[*]}
+$distros=("GitHub")
+
 
 
 
