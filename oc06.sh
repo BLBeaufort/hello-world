@@ -7,7 +7,7 @@
 directories=("dir1" "dir2" "dir3")
 for directory in "${directories[@]}"; do
 #Start if statement, ! -d is checking the condition to see if directory exzists.  If it does not, it will create a directory.
-if [!-f "$directories"]; then
+if [!-d "$directory]; then
 mkdir "$directory"
 #If directory does not exist, print to terminal "directory already exists"
 else
