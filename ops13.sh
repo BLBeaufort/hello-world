@@ -13,6 +13,8 @@ $whois firefox.com
 
 $dig firefox.com
 
-$sudo hostnamectl set-hostname "$firefox.com"
+$sudo host "$firefox.com"
 
 $nslookup -type=ns firefox.com
+
+$cat > 'C: \Users\barba\Documents\Domain Analyzer.txt'
