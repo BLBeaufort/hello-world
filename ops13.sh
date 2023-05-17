@@ -13,7 +13,7 @@ $whois firefox.com
 
 $dig firefox.com
 
-$sudo host "$firefox.com"
+$host "$firefox.com"
 
 $nslookup -type=ns firefox.com
 
