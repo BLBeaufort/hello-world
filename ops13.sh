@@ -17,4 +17,10 @@ $host "$firefox.com"
 
 $nslookup -type=ns firefox.com
 
-$cat > 'C: \Users\barba\Documents\Domain Analyzer.txt'
+$whois firefox.com >> Domain Analyzer.txt
+
+$dig firefox.com >> Domain Analyzer.txt
+
+$nslookup firefox.com >> Domain Analyzer.txt
+
+$host firefox.com >> Domain Analyzer.txt
