@@ -13,11 +13,11 @@ echo "Enter a website"
 
 read firefox.com
 
-whois $firefox.com >> DA13.txt
+whois $firefox.com >> whois.txt
 
-dig $firefox.com >> DA13.txt
+dig $firefox.com >> whois.txt
 
-host $firefox.com >> DA13.txt
+host $firefox.com >> whois.txt
 
-nslookup >> DA13.txt
+nslookup >> whois.txt
 
