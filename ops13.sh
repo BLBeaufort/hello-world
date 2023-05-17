@@ -9,18 +9,15 @@ sudo apt-get install dnsutils
 
 #!/bin/bash
 
-$whois firefox.com
+echo "Enter a website"
 
-$dig firefox.com
+read firefox.com
 
-$host "$firefox.com"
+whois $firefox.com >> DA13.txt
 
-$nslookup -type=ns firefox.com
+dig $firefox.com >> DA13.txt
 
-$whois firefox.com >> Domain Analyzer.txt
+host $firefox.com >> DA13.txt
 
-$dig firefox.com >> Domain Analyzer.txt
+nslookup >> DA13.txt
 
-$nslookup firefox.com >> Domain Analyzer.txt
-
-$host firefox.com >> Domain Analyzer.txt
