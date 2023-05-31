@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Script Name: ops301-2.sh
 #Author: Barbara L. Beaufort
 #Date of Last Revision: 31 May 2023
