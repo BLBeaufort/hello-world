@@ -1,4 +1,4 @@
-#!/bin/sh.
+#!/bin/sh
 #Script Name-opsc02.sh
 #Author-Barbara L. Beaufort
 #Date of Last Revision-31 May 2023
