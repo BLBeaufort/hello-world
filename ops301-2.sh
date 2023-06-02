@@ -15,7 +15,7 @@ filename=syslog_$now
 
 
 echo "Creating system log in working directory"
-cp /var/log/syslog ~/Desktop/Journal 08.docx
+cp /var/log/syslog ~/Desktop/Journal 08.doc/
 
 echo "Displaying timestamp in filename below"
 echo $filename
