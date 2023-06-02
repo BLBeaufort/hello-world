@@ -8,3 +8,14 @@
 cp -v /var/log/syslog "$PWD/syslog-$(date +"%Y-%m-%d-%H:%M:%S")"
 
 #End
+
+now=$(date)
+filename=syslog_$now
+
+
+
+echo "Creating system log in working directory"
+cp /var/log/syslog ~/Desktop/ops201-C2/bash
+
+echo "Displaying timestamp in filename below"
+echo $filename
