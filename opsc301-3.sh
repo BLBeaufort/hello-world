@@ -10,10 +10,9 @@ files=$(ls ${dir})
 #Prompt user for input of directory path
 read -p "Please Enter Path:" -r r1
 parent=$(dirname "$r1")
-cd "$parent"
+cd "$parent
 
 #Prompt user for input of permissions number
-!#/bin/bash
 until "$input"=no
 do 
 
