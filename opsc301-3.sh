@@ -35,8 +35,8 @@ do
     [ -x $file ] && X="Execute = yes" || X="Execute = No"
     [ -r $file ] && R="Read = yes" || R="Read = No"
 
-    echo "$file permissions"
-    echo "$w"
-    echo "$R"
-    echo "$X"
-    end 
+        echo "$file permissions"
+        echo "$w"
+        echo "$X"
+        echo "$R"
+    done
