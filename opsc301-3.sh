@@ -13,30 +13,14 @@ parent=$(dirname "$r1")
 cd "$parent
 
 #Prompt user for input of permissions number
-until "$input"=no
-do 
-
-    echo "Enter name of file to change permissions"
-    read filename
-    read -p "Please Enter Permissions Number:" -r r1
-    chmod 777 $filename
-    echo "$filename permissions has been changed:
-    echo "Would you like to change the permissions of another file? (yes or no)"
-    read $input
-    echo "You typed: $input
-
-    #Navigates to the directory input by the user and changes all files inside it to the input setting
-    read -p "Input this: " this
-    read -p "Input that: " that
-    sudo add-apt-repository ppa:${this}/${that} 
-
-    #Prints to the screen the directory contents and the new permissions settings of everything in the directory
-    [ -w $file ] && W="Write = yes" || W="Write = No"
-    [ -x $file ] && X="Execute = yes" || X="Execute = No"
-    [ -r $file ] && R="Read = yes" || R="Read = No"
-
-        echo "$file permissions"
-        echo "$w"
-        echo "$X"
-        echo "$R"
-    done
+    echo "Enter name of File"
+    ls
+    read file
+    echo "Enter Permissions"
+    read number
+    $777="chmod777"
+    read my_var
+    ls -l $file 
+    echo "Welcome User"
+    ls -l $file
+    
