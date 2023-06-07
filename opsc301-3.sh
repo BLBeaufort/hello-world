@@ -23,7 +23,6 @@ do
     echo "$filename permissions has been changed:
     echo "Would you like to change the permissions of another file? (yes or no)"
     read $input
-done
     echo "You typed: $input
 
     #Navigates to the directory input by the user and changes all files inside it to the input setting
