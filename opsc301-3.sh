@@ -10,6 +10,6 @@
     read file
     echo "Enter Permissions"
     read number
-    chmod $num $file
+    chmod $number $file
     ls -l $file
     
