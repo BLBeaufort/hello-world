@@ -25,6 +25,6 @@ else [$a = 4 ]
     exit
 fi
 echo "Do you want to try again? Y or N"
-read b
+read x
 done
 
