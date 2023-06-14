@@ -5,8 +5,8 @@
 #Description of Purpose: Conditionals in Menu Systems
 #Main
 
-x=z
-while [ $x = z ]
+e=y
+while [ $e = y ]
 do 
 echo "Please Choose:"
 echo "1 Hello World!"
@@ -21,10 +21,10 @@ elif [ $a = 2 ]
     then ping -c 3 localhost
 elif [ $a = 3 ]
     then ifconfig
-else [$a = 4 ]
-    exit
+else [ $a = 4 ]
+    exit 
 fi
-echo "Do you want to try again? Y or N"
-read x
-done
 
+echo "Do you want to try again? Y or N"
+read e
+done
