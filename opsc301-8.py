@@ -6,7 +6,6 @@
 
 print ("List of Words Dealing With Summertime Cooking")
 
-string = "Food Words"
 a = "vinegar"; b = "crushed red peppers"; c = "hot water"; d = "poultry"; e = "bbq sauce"; f = "meat mop"; g = "garlic bulbs"; h = "olive oil"; i = "eggs"; j = "potato salad"
 print (d)
 print (f, g, h, i, j)
